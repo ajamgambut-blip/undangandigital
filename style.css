@@ -215,3 +215,23 @@ section{
     padding-top:20px;
 
 }
+.foto-pasangan{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    display:block;
+
+    margin:0 auto 20px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.15);
+
+}
