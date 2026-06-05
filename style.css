@@ -217,21 +217,12 @@ section{
 }
 .foto-pasangan{
 
-    width:220px;
+    width:140px !important;
 
-    height:220px;
+    height:140px !important;
 
-    object-fit:cover;
+    border-radius:50% !important;
 
-    border-radius:50%;
-
-    border:6px solid white;
-
-    display:block;
-
-    margin:0 auto 20px;
-
-    box-shadow:
-    0 8px 25px rgba(0,0,0,.15);
+    object-fit:cover !important;
 
 }
