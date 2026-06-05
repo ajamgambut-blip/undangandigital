@@ -226,3 +226,10 @@ section{
     object-fit:cover !important;
 
 }
+.hero h1{
+
+    font-size:42px;
+
+    margin:10px 0;
+
+}
