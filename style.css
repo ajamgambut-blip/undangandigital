@@ -242,4 +242,49 @@ section{
     transform:
     translateY(-5px);
 
+}.pengantar{
+
+    text-align:center;
+
+    line-height:1.8;
+
+}
+
+.pengantar h2{
+
+    margin-bottom:20px;
+
+}.kartu-acara{
+
+    background:
+    linear-gradient(
+        135deg,
+        #fffaf5,
+        #fff
+    );
+
+    padding:25px;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 6px 20px rgba(0,0,0,.08);
+
+}
+.kartu-acara h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.kartu-acara p{
+
+    margin:8px 0;
+
 }
