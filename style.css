@@ -12,24 +12,72 @@ body{
 
 #cover{
     height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url("foto-cover.jpg");
+
+    background-size:cover;
+    background-position:center;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
+    color:white;
+
     padding:20px;
 }
 
+/* LETAKKAN DI SINI */
+
+#cover h3{
+    font-weight:normal;
+    letter-spacing:2px;
+}
+
 #cover h1{
-    font-size:40px;
+    font-size:56px;
     margin:20px 0;
 }
 
+#cover h2{
+    margin:15px 0;
+}
+
+#cover p{
+    margin-top:20px;
+}
+
+
+
 #cover button{
-    padding:12px 24px;
+
+    margin-top:25px;
+
+    padding:14px 30px;
+
     border:none;
-    border-radius:10px;
+
+    border-radius:50px;
+
     font-size:16px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#333;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.2);
+
 }
 
 .hidden{
@@ -53,4 +101,23 @@ body{
 #timer{
     font-size:28px;
     margin-top:20px;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+#cover h1,
+#cover h2,
+#cover h3,
+#cover p,
+#cover button{
+    animation:fadeIn 1s ease;
 }
