@@ -47,7 +47,7 @@ new Date(
 "2026-12-12 09:00:00"
 );
 
-setInterval(()=>{
+function updateCountdown(){
 
     const sekarang =
     new Date();
@@ -55,15 +55,60 @@ setInterval(()=>{
     const selisih =
     target - sekarang;
 
+    if(selisih <= 0){
+
+        document
+        .getElementById("timer")
+        .innerHTML =
+        "Acara Sedang Berlangsung 🎉";
+
+        return;
+    }
+
     const hari =
     Math.floor(
         selisih /
         (1000*60*60*24)
     );
 
+    const jam =
+    Math.floor(
+        (selisih %
+        (1000*60*60*24))
+        /
+        (1000*60*60)
+    );
+
+    const menit =
+    Math.floor(
+        (selisih %
+        (1000*60*60))
+        /
+        (1000*60)
+    );
+
+    const detik =
+    Math.floor(
+        (selisih %
+        (1000*60))
+        /
+        1000
+    );
+
     document
     .getElementById("timer")
-    .innerText =
-    hari + " Hari";
+    .innerHTML =
+    `
+    ${hari} Hari<br>
+    ${jam} Jam<br>
+    ${menit} Menit<br>
+    ${detik} Detik
+    `;
+}
 
-},1000);
+updateCountdown();
+
+setInterval(
+updateCountdown,
+1000
+);
