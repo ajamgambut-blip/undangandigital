@@ -1,3 +1,32 @@
+
+const DATA = {
+
+    pengantin:
+    "Anam & Sakura",
+
+    tanggal:
+    "12 Desember 2026",
+
+    lokasi:
+    "Tokyo"
+
+};
+
+document
+.getElementById("namaCover")
+.innerText =
+DATA.pengantin;
+
+document
+.getElementById("namaHero")
+.innerText =
+DATA.pengantin;
+
+document
+.getElementById("tanggalHero")
+.innerText =
+DATA.tanggal;
+
 // ===== NAMA TAMU DARI URL =====
 
 const params =
