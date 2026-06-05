@@ -2,10 +2,10 @@
 const DATA = {
 
     pengantin:
-    "Anam & Sakura",
+    "Anam & Lina",
 
     tanggal:
-    "12 Desember 2026",
+    "14 Desember 2026",
 
     lokasi:
     "Tokyo"
