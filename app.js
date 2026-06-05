@@ -125,14 +125,29 @@ function updateCountdown(){
     );
 
     document
-    .getElementById("timer")
-    .innerHTML =
-    `
-    ${hari} Hari<br>
-    ${jam} Jam<br>
-    ${menit} Menit<br>
-    ${detik} Detik
-    `;
+.getElementById("timer")
+.innerHTML =
+`
+<div class="box">
+    <span>${hari}</span>
+    <small>Hari</small>
+</div>
+
+<div class="box">
+    <span>${jam}</span>
+    <small>Jam</small>
+</div>
+
+<div class="box">
+    <span>${menit}</span>
+    <small>Menit</small>
+</div>
+
+<div class="box">
+    <span>${detik}</span>
+    <small>Detik</small>
+</div>
+`;
 }
 
 updateCountdown();
