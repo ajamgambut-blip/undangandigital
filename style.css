@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#fdfaf6;
+    color:#333;
+}
+
+#cover{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#cover h1{
+    font-size:40px;
+    margin:20px 0;
+}
+
+#cover button{
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.hidden{
+    display:none;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.countdown{
+    text-align:center;
+    padding:40px 20px;
+}
+
+#timer{
+    font-size:28px;
+    margin-top:20px;
+}
